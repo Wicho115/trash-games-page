@@ -19,49 +19,49 @@ const Carrusel = (props) => {
             <center>
                 <div id={datatarget} className="carousel slide Carrusel" data-ride="carousel">
                     <ol className="carousel-indicators">
-                        <li data-target={datatarget} data-slide-to={0} className="active" />
-                        <li data-target={datatarget} data-slide-to={1} />
-                        <li data-target={datatarget} data-slide-to={2} />
-                        <li data-target={datatarget} data-slide-to={3} />
+                        <li data-target={"#" + datatarget} data-slide-to={0} className="active" />
+                        <li data-target={"#" + datatarget} data-slide-to={1} />
+                        <li data-target={"#" + datatarget} data-slide-to={2} />
+                        <li data-target={"#" + datatarget} data-slide-to={3} />
                     </ol>
                     <div className="carousel-inner">
                         <div className="carousel-item active">
-                            <Link to={href1} target="_blank"><img className="CarruselImg" src={src1} alt={title1} /></Link>
+                            <a href={href1} target="_blank" rel="noopener noreferrer"><img className="CarruselImg" src={src1} alt={title1} /></a>
                             <div className="carousel-caption d-none d-md-block">
                                 <h5>{title1}</h5>
                                 <p>{desc1}</p>
                             </div>
                         </div>
                         <div className="carousel-item">
-                            <Link to={href2} target="_blank"><img className="CarruselImg" src={src2} alt={title2} /></Link>
+                            <a href={href2} target="_blank" rel="noopener noreferrer"><img className="CarruselImg" src={src2} alt={title2} /></a>
                             <div className="carousel-caption d-none d-md-block">
                                 <h5>{title2}</h5>
                                 <p>{desc2}</p>
                             </div>
                         </div>
                         <div className="carousel-item">
-                            <Link to={href3} target="_blank"><img className="CarruselImg" src={src3} alt={title3} /></Link>
+                            <a href={href3} target="_blank" rel="noopener noreferrer"><img className="CarruselImg" src={src3} alt={title3} /></a>
                             <div className="carousel-caption d-none d-md-block">
                                 <h5>{title3}</h5>
                                 <p>{desc3}</p>
                             </div>
                         </div>
                         <div className="carousel-item">
-                            <Link to={href4} target="_blank"><img className="CarruselImg" src={src4} alt={title4} /></Link>
+                            <a href={href4} target="_blank" rel="noopener noreferrer"><img className="CarruselImg" src={src4} alt={title4} /></a>
                             <div className="carousel-caption d-none d-md-block">
                                 <h5>{title4}</h5>
                                 <p>{desc4}</p>
                             </div>
                         </div>
                     </div>
-                    <Link className="carousel-control-prev" to={datatarget} role="button" data-slide="prev">
+                    <a className="carousel-control-prev" href={"#" + datatarget} role="button" data-slide="prev">
                         <span className="carousel-control-prev-icon" aria-hidden="true" />
                         <span className="sr-only">Previous</span>
-                    </Link>
-                    <Link className="carousel-control-next" to={datatarget} role="button" data-slide="next">
+                    </a>
+                    <a className="carousel-control-next" href={"#" + datatarget} role="button" data-slide="next">
                         <span className="carousel-control-next-icon" aria-hidden="true" />
                         <span className="sr-only">Next</span>
-                    </Link>
+                    </a>
                 </div>
             </center>
 
