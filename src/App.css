@@ -1,38 +1,190 @@
-.App {
+/*========= GENERAL HTML =========*/
+
+body{
+  background-color: rgb(56, 35, 77);
+}
+
+/*a:hover{
+  color: rgb(39, 102, 57);
+  font-size: 23px;
+}*/
+
+/*========= NAVIGATION BAR =========*/
+
+.TrashNavBar{
+  background-color: rgb(44, 33, 55);
+}
+
+.NavBarLogo{
+  width: 140px;
+  height: 56px;
+}
+
+.NavButton{
+  color: rgb(161, 239, 140);
+  font-size: 23px;
+  font-weight: bold;
+}
+
+/*========= CARRUSELS =========*/
+
+.Carrusel{
+  width: 80%;
+  display: inline-block;
+}
+
+.CarruselImg{
+  width: 100%;
+}
+
+/*========= CONTAINERS =========*/
+
+.MainContainer{
+  margin: 16px;
+  vertical-align: middle;
+  display: inline-block;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*========= DIVIDERS =========*/
+
+.Divider1{
+  height: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.SectionTitle{
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(161, 239, 140);
+  text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/*========= HOMEPAGE CARDS =========*/
+
+.CardContainer{
+  width: 49%;
+  display: inline-block;
+  vertical-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.CardImgColumn{
+  width: 45%;
+  display: inline-block;
+  vertical-align: middle;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.CardImg{
+  width: 286px;
+  height: 180px;
+  /*width: 100%*/
+}
+
+.CardText{
+  margin: 1rem;
+  color: rgb(161, 239, 140);
+  text-align: justify;
+}
+
+.CardTextColumn{
+  width: 54%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.CardFormat{
+  color: rgb(161, 239, 140);
+  text-align: justify;
+  width: auto;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.CardBody{
+  background-color: rgb(56, 35, 77);
+}
+
+.CardTitle{
+  font-size: 20px;
+  text-align: center;
+  color: rgb(161, 239, 140);
+}
+
+/*========= ABOUT PAGE =========*/
+
+.AboutText{
+  width: 80%;
+  text-align: justify;
+  color: rgb(161, 239, 140);
+}
+
+/*========= GAMES PAGE =========*/
+
+.GamesTitle{
+  width: 80%;
+  text-align: justify;
+  color: rgb(161, 239, 140);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.GamesText{
+  width: 80%;
+  text-align: justify;
+  color: rgb(161, 239, 140);
+}
+
+/*========= USER PROFILE =========*/
+
+.UserContainer{
+  background-color: rgb(71, 36, 107);
+  Margin: 2rem;
+  text-align: center;
+}
+
+.UserArticle{
+  display: inline-block;
+  vertical-align: top;
+  width: 30%;
+}
+
+.UserPFP{
+  width: 40%;
+  height: 40%;
+  border-radius: 5rem;
+}
+
+.UserSocialCard{
+  width: 75%;
+  display: inline-block;
+  text-align: justify;
+  color: rgb(161, 239, 140);
+}
+
+.UserAside{
+  display: inline-block;
+  vertical-align: top;
+  width: 69%;
+}
+
+.UserGameCard{
+  width: 100%;
+  display: inline-block;
+  vertical-align: center;
+}
+
+.UserGameCardImgColumn{
+  width: 35%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.UserGameCardImg{
+  width: 286px;
+  height: 180px;
+}
+
+.UserGameCardTextColumn{
+  width: 64%;
+  display: inline-block;
+  vertical-align: middle;
 }
