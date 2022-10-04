@@ -3,6 +3,10 @@ import React from "react";
 const Card = (props) => {
     const { gameImg, gameTitle, gameDescription } = props;
 
+    /*<Card gameImg=""
+    gameTitle=""
+    gameDescription=""/>*/
+
     return (
         <div className="CardContainer">
             <div className="CardFormat">
@@ -17,7 +21,6 @@ const Card = (props) => {
                 </div>
             </div>
         </div>
-
     );
 }
 
