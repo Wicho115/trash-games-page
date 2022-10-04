@@ -2,43 +2,24 @@ import React from "react";
 
 const Footer = (props) => {
     return (
-        <footer className="text-center footer-style" style={{ backgroundColor: 'rgb(68, 97, 118)' }}>
-            <div className="container">
-                <div className="row">
-                    <div className="col-md-4 footer-col" style={{ color: 'rgb(161, 239, 140)' }}>
-                        <p><img src="https://media.discordapp.net/attachments/945876666276773970/1025419913462030376/Logo.png" alt="" width={80} height={40} style={{ marginTop: '4px' }} /></p>
-                        <p>
-                            © 2022 <br />
-                            TrashGames
-                        </p>
-                    </div>
-                    <div className="col-md-4 footer-col" style={{ color: 'rgb(161, 239, 140)' }}>
-                        <h3>Mis redes</h3>
-                        <ul className="list-inline">
-                            <li>
-                                <a target="_blank" href="#" className="btn-social btn-outline"><i className="fa fa-fw fa-facebook" /></a>
-                            </li>
-                            <li>
-                                <a target="_blank" href="#" className="btn-social btn-outline"><i className="fa fa-fw fa-google-plus" /></a>
-                            </li>
-                            <li>
-                                <a target="_blank" href="#" className="btn-social btn-outline"><i className="fa fa-fw fa-twitter" /></a>
-                            </li>
-                            <li>
-                                <a target="_blank" href="#" className="btn-social btn-outline"><i className="fa fa-fw fa-linkedin" /></a>
-                            </li>
-                            <li>
-                                <a target="_blank" href="#" className="btn-social btn-outline"><i className="fa fa-fw fa-dribbble" /></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div className="col-md-4 footer-col" style={{ color: 'rgb(161, 239, 140)' }}>
-                        <h3>Trabajo FreeLancer</h3>
-                        <p>Tengo más de X años de experiencia en maquetación web y me apasiona lo que hago!</p>
-                    </div>
+        <div className="footer-basic">
+            <footer>
+                <div className="social">
+                    <a href="#"><i className="bi bi-facebook" /></a>
+                    <a href="#"><i className="bi bi-snapchat" /></a>
+                    <a href="#"><i className="bi bi-twitter" /></a>
+                    <a href="#"><i className="bi bi-instagram" /></a>
                 </div>
-            </div>
-        </footer>
+                <ul className="list-inline">
+                    <li className="list-inline-item"><a href="/">Home</a></li>
+                    <li className="list-inline-item"><a href="/about">About</a></li>
+                    <li className="list-inline-item"><a href="/games">Games</a></li>
+                    <li className="list-inline-item"><a href="#">User</a></li>
+                    <li className="list-inline-item"><a href="#">Privacy Policy</a></li>
+                </ul>
+                <p className="copyright">TrashGames © 2022</p>
+            </footer>
+        </div>
     );
 }
 

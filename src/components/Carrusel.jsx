@@ -14,6 +14,14 @@ const Carrusel = (props) => {
         title1="" title2="" title3="" title4=""
         desc1="" desc2="" desc3="" desc4=""/>*/
 
+    function checkRef(href, src, title){
+        if (href != "") {
+            return (<a href={href} target="_blank"><img className="CarruselImg" src={src} alt={title} /></a>);
+        }else{
+            return(<img className="CarruselImg" src={src} alt={title} />);
+        };
+    }
+
     return (
         <>
             <center>
@@ -26,28 +34,28 @@ const Carrusel = (props) => {
                     </ol>
                     <div className="carousel-inner">
                         <div className="carousel-item active">
-                            <a href={href1} target="_blank" rel="noopener noreferrer"><img className="CarruselImg" src={src1} alt={title1} /></a>
+                            {checkRef(href1, src1, title1)}
                             <div className="carousel-caption d-none d-md-block">
                                 <h5>{title1}</h5>
                                 <p>{desc1}</p>
                             </div>
                         </div>
                         <div className="carousel-item">
-                            <a href={href2} target="_blank" rel="noopener noreferrer"><img className="CarruselImg" src={src2} alt={title2} /></a>
+                        {checkRef(href2, src2, title2)}
                             <div className="carousel-caption d-none d-md-block">
                                 <h5>{title2}</h5>
                                 <p>{desc2}</p>
                             </div>
                         </div>
                         <div className="carousel-item">
-                            <a href={href3} target="_blank" rel="noopener noreferrer"><img className="CarruselImg" src={src3} alt={title3} /></a>
+                        {checkRef(href3, src3, title3)}
                             <div className="carousel-caption d-none d-md-block">
                                 <h5>{title3}</h5>
                                 <p>{desc3}</p>
                             </div>
                         </div>
                         <div className="carousel-item">
-                            <a href={href4} target="_blank" rel="noopener noreferrer"><img className="CarruselImg" src={src4} alt={title4} /></a>
+                        {checkRef(href4, src4, title4)}
                             <div className="carousel-caption d-none d-md-block">
                                 <h5>{title4}</h5>
                                 <p>{desc4}</p>

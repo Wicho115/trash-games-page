@@ -10,9 +10,9 @@ const Nav = (props) => {
                     </a>
                     <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div className="navbar-nav navbar-light">
-                            <a className="nav-link NavButton" href="index.html">Home</a>
-                            <a className="nav-link NavButton" href="about.html">About Us</a>
-                            <a className="nav-link NavButton" href="games.html">Games</a>
+                            <a className="nav-link NavButton" href="/">Home</a>
+                            <a className="nav-link NavButton" href="/about">About Us</a>
+                            <a className="nav-link NavButton" href="/games">Games</a>
                             <a className="nav-link NavButton" href="user.html">User</a>
                         </div>
                     </div>
