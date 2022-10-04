@@ -22,6 +22,18 @@ const Carrusel = (props) => {
         };
     }
 
+    function checkTitle(title){
+        if (title != "") {
+            return (<h5>{title}</h5>);
+        }
+    }
+
+    function checkDescription(desc){
+        if (desc != "") {
+            return (<p>{desc}</p>);
+        }
+    }
+
     return (
         <>
             <center>
@@ -36,29 +48,29 @@ const Carrusel = (props) => {
                         <div className="carousel-item active">
                             {checkRef(href1, src1, title1)}
                             <div className="carousel-caption d-none d-md-block">
-                                <h5>{title1}</h5>
-                                <p>{desc1}</p>
+                            {checkTitle(title1)}
+                            {checkDescription(desc1)}
                             </div>
                         </div>
                         <div className="carousel-item">
                         {checkRef(href2, src2, title2)}
                             <div className="carousel-caption d-none d-md-block">
-                                <h5>{title2}</h5>
-                                <p>{desc2}</p>
+                            {checkTitle(title2)}
+                            {checkDescription(desc2)}
                             </div>
                         </div>
                         <div className="carousel-item">
                         {checkRef(href3, src3, title3)}
                             <div className="carousel-caption d-none d-md-block">
-                                <h5>{title3}</h5>
-                                <p>{desc3}</p>
+                            {checkTitle(title3)}
+                            {checkDescription(desc3)}
                             </div>
                         </div>
                         <div className="carousel-item">
                         {checkRef(href4, src4, title4)}
                             <div className="carousel-caption d-none d-md-block">
-                                <h5>{title4}</h5>
-                                <p>{desc4}</p>
+                            {checkTitle(title4)}
+                            {checkDescription(desc4)}
                             </div>
                         </div>
                     </div>
