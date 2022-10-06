@@ -13,7 +13,9 @@ const Nav = (props) => {
                             <a className="nav-link NavButton" href="/">Home</a>
                             <a className="nav-link NavButton" href="/about">About Us</a>
                             <a className="nav-link NavButton" href="/games">Games</a>
-                            <a className="nav-link NavButton" href="user.html">User</a>
+                            <a className="nav-link NavButton" href="/user">User</a>
+                            <a className="nav-link NavButton" href="/register">Register</a>
+                            <a className="nav-link NavButton" href="/login">Login</a>
                         </div>
                     </div>
                 </div>
